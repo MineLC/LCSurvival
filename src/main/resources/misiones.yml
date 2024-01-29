@@ -1,0 +1,58 @@
+
+prefix: '&8[&eMisiones&8]&r'
+# ACCIONES:
+# [MSG] ENVIAR MENSAJE (&)
+# [CONSOLE_CMD] ENVIAR COMANDO DESDE LA CONSOLA
+# [PLAYER_CMD] ENVIAR COMANDO DESDE EL JUGADOR
+# [GUI] ENVIAR A GUI (mineria, cazeria, asesino, main)
+
+# MISIONES: cazeria, mineria, asesino
+GUI:
+  MAIN:
+    title: '&8Menú de Misiones'
+    size: 9
+    #'AIR' para que no se rellene
+    fill-item: GRAY_STAINED_GLASS_PANE
+    Items:
+      '10':
+        ID: DIAMOND_SWORD
+        name: '&cMisiones de cazería'
+        mision: 'cazeria'
+        lore:
+          - ''
+          - '&7Click para abrir el menú'
+          - '&7 de misiones de cazería.'
+          - ''
+          - '&b ● &7Misiones completadas: &b%completados%&7/&b%total_misiones%'
+          - ''
+          - '&e ⮕ ¡Te faltan &6%restantes% &epara completar todas!'
+        actions:
+          - '[GUI] cazeria'
+      '11':
+        ID: DIAMOND_PICKAXE
+        name: '&cMisiones de minería'
+        mision: 'mineria'
+        lore:
+          - ''
+          - '&7Click para abrir el menú'
+          - '&7de misiones de minería.'
+          - ''
+          - '&b ● &7Misiones completadas: &b%completados%&7/&b%total_misiones%'
+          - ''
+          - '&e ⮕ ¡Te faltan &6%restantes% &epara completar todas!'
+        actions:
+          - '[GUI] mineria'
+      '12':
+        ID: NETHERITE_SWORD
+        name: '&cMisiones de asesino'
+        mision: 'asesino'
+        lore:
+          - ''
+          - '&7Click para abrir el menú'
+          - '&7de misiones de asesino.'
+          - ''
+          - '&b ● &7Misiones completadas: &b%completados%&7/&b%total_misiones%'
+          - ''
+          - '&e ⮕ ¡Te faltan &6%restantes% &epara completar todas!'
+        actions:
+          - '[GUI] asesino'

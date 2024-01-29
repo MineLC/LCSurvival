@@ -1,0 +1,6 @@
+name: LCSurvival
+version: '${project.version}'
+main: lc.survival.LCSurvival
+api-version: '1.20'
+commands:
+  armorclear:
